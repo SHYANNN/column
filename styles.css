@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-color:#fff;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.links{
+    display: flex;
+}
+.links ul{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 10%;
+    justify-content: space-between;
+}
+.links li{
+    padding: .5em;
+    border-radius: 10px;
+    background: hsl(31,77%,52%);
+    border: 2px solid hsl(31,77%,52%);
+}
+.links a{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: hsl(179,100%,13%);
+}
+.links li:hover{
+    background: transparent;
+}
+.card-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+.card{
+    padding: 2em 1em 2em 2em;
+}
+.img{
+    margin:10px 200px 20px 0;
+}
+.title{
+    color: hsl(0,0%,95%);
+    margin: 0 0 50px 0;
+}
+.content{
+    color: hsl(0,0%,100%,0.75); 
+    line-height: 1.7;
+    margin-right: 50px;
+    margin-bottom: 90px;
+}
+.button{
+    display: flex;
+}
+a.btn{
+    text-decoration: none;
+    border: 2px solid hsl(0,0%,95%);
+    display: inline-block;
+    padding:.8em 2em;
+    border-radius: 60px;
+    background-color: hsl(0,0%,95%);
+}
+.sedans{
+    background: hsl(31,77%,52%);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+
+.sedans a.btn{
+    color: hsl(31,77%,52%);
+}
+.sedans a.btn:hover{
+    background-color: hsl(31,77%,52%);
+    color: hsl(0,0%,95%);
+}
+.suv{
+    background: hsl(184,100%,22%);
+}
+.suv a.btn:hover{
+    background: hsl(184,100%,22%);
+    color: hsl(0,0%,95%);
+}
+.suv a.btn{
+    color: hsl(184,100%,22%);
+}
+.luxury{
+    background: hsl(179,100%,13%);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.luxury a.btn:hover{
+    background: hsl(179,100%,13%);
+    color: hsl(0,0%,95%);
+}
+.luxury a.btn{
+    color: hsl(184,100%,22%);
+}
+/* grid */
+.card-container-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
